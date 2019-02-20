@@ -7,14 +7,30 @@
 
 		body {
 			font-family: Raleway;
+			margin: 0;
+			padding: 0;
+		}
+		header {
 			background-color: #192654;
 		}
-		.logo-container {
-			max-width: 300px;
+		.logo {
+			max-width: 100px;
 		}
 		h2, h1 {
-			font-weight: 900i;
+			font-weight: 900;
 			color: #fff;
+			font-style: italic;
+			text-transform: uppercase;
+			margin: 0;
+
+		}
+		h2 {
+			font-size: 33px;
+		}
+
+		h1 {
+			font-size: 137px;
+			margin: 0;
 		}
 		.orange {
 			color: #f08020;
@@ -24,23 +40,35 @@
 			font-weight: 600;
 			color: #f8d000;
 		}
+
+		div {
+			width: 33%;
+			display: inline-block;
+		}
+
+		.ricky-shape-outside {
+			max-width: 100%;
+		    clip-path: polygon(45% 8%, 67% 3%, 100% 0%, 100% 100%, 100% 100%, 50% 100%, 0% 100%, 0% 42%, 15% 28%, 29% 22%, 30% 21%, 43% 9%);
+		    shape-outside: polygon(45% 8%, 67% 3%, 100% 0%, 100% 100%, 100% 100%, 50% 100%, 0% 100%, 0% 42%, 15% 28%, 29% 22%, 30% 21%, 43% 9%);
+		    background-color: green;
+		    float: right;
+		}
+
 	</style>
 </head>
 <body>
+	<header>
 
-<header>
-<div class="logo-container">
-	<img src="sunnyd-rtv-logo.svg"/>
-</div>
-<div class="img-block">
-	<img src="ricky-and-car.png"/>
-</div>
-<div class="text-block">
-<h2>You could</h2>
-<h1 class="orange">WIN</h1>
-<h2>One ultimate race weekend in vegas</h2>
-<h3>Upload a picture that shows why you're our biggest racing fan to enter!</h3>
-</div>
-</header>
+		<div class="img-block">
+			<img class="ricky-shape-outside" src="ricky-and-car.png"/>
+			<img class="logo" src="sunnyd-rtv-logo.svg"/>
+		</div>
+		<div class="text-block">
+			<h2>You could</h2>
+			<h1 class="orange">WIN</h1>
+			<h2>One ultimate race weekend in vegas</h2>
+			<h3>Upload a picture that shows why you're our biggest racing fan to enter!</h3>
+		</div>
+	</header>
 </body>
 </html>
